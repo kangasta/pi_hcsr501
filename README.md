@@ -5,6 +5,16 @@ Library for playing around with pi_hcsr501 PIR motion sensor with Raspberry Pi.
 
 ## Usage
 
+```python
+
+HCSR501 = HcSr501()
+
+while True:
+	print(str(HCSR501.active) + " ", end="\r")
+	sleep(0.5)
+
+```
+
 ## Testing
 
 Run unit tests with command:
