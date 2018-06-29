@@ -7,6 +7,9 @@ class HcSr501(object):
 		self.__pi = pigpio.pi()
 		self.__pi.set_mode(17, pigpio.INPUT)
 
+	def __str__(self):
+		return ("Motion: " + str(self.active))
+
 	@property
 	def active(self):
 		return bool(self.__pi.read(17))
