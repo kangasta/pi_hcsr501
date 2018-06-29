@@ -12,11 +12,11 @@ script:
 - cd pi_hcsr501
 - python -m unittest discover -s tst/
 - cd ..
-#deploy:
-#  provider: pypi
-#  user: kangasta
-#  password:
-#    secure: ZH7rqYWNbkGmt/4fmR020Yg/x96NGCCs40uvjC0cJJwb10cmR9nC54rW+p4zRaGDZkySyLhG7bulTKhg4+ik6DRQyuNTe0yeEf+qlz2HfOHXX1J+FvQpv6KHHJ4J3KGfnbnTjw/7jnpFjFe17kST2htXxOvWo4eT+uhTww+Gbbrc1WuvO4bz1IRyN9URgq4PhV5Vb4cuEtKAT3g/MgL8E/9tRF4jxAC8Xg9gN0fvMEKqwWcE3Yrlp0yfLV9XOG5qIcvJWSioSlBgo8FnQdztRRPWxF+IqIMcjUVzXbmo9MCw3ShFS+8wI4q/65Im0VoGuJs4bef2eMJGM7cs1PDpMQhWjk5BtlRS6r4OnKFVwFLrzsTBjUnm4YzZz9JxUCLn7jyDEM2HNM8Yqk9Ub0Gf+6ZAQvobN1NI4bRG2sYkB3dG34lcGkE4CrIxFye8o9ojIxOjpmBRIPo13UM803OntnolKCVsDIdGEtxO8hNiO/giJTyoatBo5MskypRNzn1weTMc0A8wJeNqau/V83oaqv7wuDicCL7Cy4NRqaH+YxGGV5pCa1tYTQbAAHL4MRPlA+r28FyfSyLOWSK77jhsQcFkJzBvEA4HGA+zCynM86evFYbeXv0ZkTTxTOZi1sNk7c1Vw7iDgKwBiAdi5IOhfJGF2uFtkauKiIflwOnk9Qs=
-#  on:
-#    tags: true
-#    python: 3.6
+deploy:
+  provider: pypi
+  user: kangasta
+  password:
+    secure: T+GzUISlHR4k9yo9zflCiTJ8TDNQwkzWqK3lAuy1pEMJ/rSX3q5ToEjhcg4PbS8t9EarIsjrQ125VQnYiLNr+CnAvUT2DfMiyzVruiGAQ4NE2/0umXacHe89FpE91QyrUEPmo0piCncKGISG4++WQP/Uz2MKRJwEIiA35kIL0FkHAD5p+lISZdp7BzDoah+hepF8gVz6N8EqAw5Uq//NWJsal2Z6RO8RM7t9zQ9Jz8rqtK66vtoJ+ZaNgJ0p0XXcnGFoFhti0RMwbfYYZoyRi17WKsNI/YWRVkAicdP3iqzSWUvyxd7+v2fNQxDRymJQ2eDkGy6ekNLnaJyt+XcRW7v3WOfRMEg2mxdrvPxn3qQEeWhCfhmHL9e1y/cNPbiDN4Ht9LXYyAvAMjmS8xNied867KDd8lZc7CaipNqQtahHiR394NtO2XcdEu2HRNkdx6w/SZrbFMX7crdH7fAvtpuwXIEmjMX7LSK8IVuGeVWJ3S7NFW/RTDIHZZb4zXCfNbPkGlLiDwL837G6G5fDWhpa01X6CSsicMdW2VNqm1df5MXC+np/odf23IeKlapQXMfn+KHJINFhqdp0udFgVfD7k8x63QSauMxxfOie3AfWmhpC6UWGYnmdtW5VUhi5PcbqCJFJ73eaKlRc6lHjDvSZAoJp1FnYDGH8lJlth3Y=
+  on:
+    tags: true
+    python: 3.6
