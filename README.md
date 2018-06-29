@@ -1,5 +1,5 @@
 # pi_hcsr501
-[![Build Status](https://travis-ci.org/kangasta/py-si7021.svg?branch=master)](https://travis-ci.org/kangasta/py-si7021)
+[![Build Status](https://travis-ci.org/kangasta/pi_hcsr501.svg?branch=master)](https://travis-ci.org/kangasta/pi_hcsr501)
 
 Library for playing around with pi_hcsr501 PIR motion sensor with Raspberry Pi.
 
