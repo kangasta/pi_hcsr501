@@ -1,0 +1,22 @@
+language: python
+python:
+- '2.7'
+- '3.5'
+- '3.6'
+- 3.6-dev
+- 3.7-dev
+install:
+- pip install -r requirements.txt
+- pip install -r tst_requirements.txt
+script:
+- cd pi_hcsr501
+- python -m unittest discover -s tst/
+- cd ..
+#deploy:
+#  provider: pypi
+#  user: kangasta
+#  password:
+#    secure: ZH7rqYWNbkGmt/4fmR020Yg/x96NGCCs40uvjC0cJJwb10cmR9nC54rW+p4zRaGDZkySyLhG7bulTKhg4+ik6DRQyuNTe0yeEf+qlz2HfOHXX1J+FvQpv6KHHJ4J3KGfnbnTjw/7jnpFjFe17kST2htXxOvWo4eT+uhTww+Gbbrc1WuvO4bz1IRyN9URgq4PhV5Vb4cuEtKAT3g/MgL8E/9tRF4jxAC8Xg9gN0fvMEKqwWcE3Yrlp0yfLV9XOG5qIcvJWSioSlBgo8FnQdztRRPWxF+IqIMcjUVzXbmo9MCw3ShFS+8wI4q/65Im0VoGuJs4bef2eMJGM7cs1PDpMQhWjk5BtlRS6r4OnKFVwFLrzsTBjUnm4YzZz9JxUCLn7jyDEM2HNM8Yqk9Ub0Gf+6ZAQvobN1NI4bRG2sYkB3dG34lcGkE4CrIxFye8o9ojIxOjpmBRIPo13UM803OntnolKCVsDIdGEtxO8hNiO/giJTyoatBo5MskypRNzn1weTMc0A8wJeNqau/V83oaqv7wuDicCL7Cy4NRqaH+YxGGV5pCa1tYTQbAAHL4MRPlA+r28FyfSyLOWSK77jhsQcFkJzBvEA4HGA+zCynM86evFYbeXv0ZkTTxTOZi1sNk7c1Vw7iDgKwBiAdi5IOhfJGF2uFtkauKiIflwOnk9Qs=
+#  on:
+#    tags: true
+#    python: 3.6
