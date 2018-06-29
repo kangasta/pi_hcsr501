@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
 	name='pi_hcsr501',
-	version='0.5.0',
+	version='0.5.1',
 	author='Toni Kangas',
 	description='Library to read hcsr501 sensor.',
 	long_description=long_description,
