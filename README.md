@@ -7,6 +7,8 @@ Library for playing around with hcsr501 PIR motion sensor with Raspberry Pi.
 
 ```python
 
+from pi_hcsr501 import HcSr501
+
 HCSR501 = HcSr501()
 
 while True:
