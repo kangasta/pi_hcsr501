@@ -5,7 +5,7 @@ import pigpio
 class HcSr501(object):
 	def __init__(self, pin=17):
 		self.__pi = pigpio.pi()
-		self.__pi.set_mode(17, pigpio.INPUT)
+		self.__pi.set_mode(pin, pigpio.INPUT)
 
 	def __str__(self):
 		return ("Motion: " + str(self.active))
